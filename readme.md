@@ -31,7 +31,7 @@ This project uses an HTML form and asks users to input a number; the output will
 
 ## Known Bugs
 
-None at the moment...
+* I am getting a ? (quesiton mark) at the end of the url, but there are no errors in the console, and the outputs are what I want them to be, so maybe this is something to look at during the code reivew.
 
 ## Support and contact details
 
