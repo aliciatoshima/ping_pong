@@ -22,19 +22,19 @@ var pingPong = function(number) {
 
 var doTheThing = function(array) {
   array.forEach(function(index) {
-    //debugger;
-    $("ul.output").append("<li>" + index + "</li>").last()
-    //$(".year").text(index);
+    $("ul.output").append("<li>" + index + "</li>");
   })
 }
 
 
 $(document).ready(function() {
   $("form#leap-year").submit(function(event) {
-    event.preventDefault();
+    $("ul.output").empty();
     var number = parseInt($("input#number").val());
     var result = doTheThing(pingPong(number));
+  //  $("#result").empty()
 
     $("#result").show();
+    event.preventDefault();
   });
 });
