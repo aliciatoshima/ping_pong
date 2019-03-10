@@ -2,23 +2,21 @@
 
 
 var pingPong = function(number) {
+  var array = [];
   for (i=1; i <= number; i++) {
-    debugger;
+    var display
     if (i % 15 === 0) { //using mod
-      var display = "pingpong"
-      return display
+      display = "pingpong";
     } else if (i % 3 === 0) {
-      var display =  "ping"
-      return display
+      display =  "ping";
     } else if (i % 5 === 0) {
-      var display = "pong"
-      return display
+      display = "pong";
     } else {
-      var display =  i
-      return display
+      display =  i;
     }
+    array.push(display);
   }
-  //return display
+  return array;
 }
 
 
@@ -60,6 +58,10 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = pingPong(number);
+
+    // result.forEach(function(j) {
+    //   $(".year").text(j);
+    // })
 
     $(".year").text(result);
 
