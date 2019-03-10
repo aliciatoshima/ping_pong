@@ -1,7 +1,7 @@
 // pingpong function
 
-
 var pingPong = function(number) {
+  //debugger;
   var array = [];
   for (i=1; i <= number; i++) {
     var display
@@ -23,24 +23,10 @@ var pingPong = function(number) {
 var doTheThing = function(array) {
   array.forEach(function(index) {
     //debugger;
-    $("ul.output").append("<li>" + index + "</li>")
+    $("ul.output").append("<li>" + index + "</li>").last()
     //$(".year").text(index);
   })
 }
-
-//
-//
-// var mapping = function(sentence) {
-//   var array = sentence.split(" ")
-//   var array2 = []
-//   array.forEach(function(word) {
-//     var mapResult = array2.push(pigLatin(word));
-//   })
-//   return array2.join(" ")
-// }
-
-
-
 
 
 $(document).ready(function() {
@@ -48,12 +34,6 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = doTheThing(pingPong(number));
-
-
-
-    //$(".year").text(result);
-
-
 
     $("#result").show();
   });
