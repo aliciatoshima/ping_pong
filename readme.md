@@ -13,9 +13,12 @@ This project uses an HTML form and asks users to input a number; the output will
 **Input:** 15
 **Output:** [1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, pingpong]
 
-Logic:
+##### Logic:
 * Since the logic will need to handle the division of 3 and 5, we will want to handle the "pingpong" case first, or numbers that are divisible by 15. This can be done by using the modulo operator and indeces satisfying x % 15 = 0 will return "pingpong"
-* Then we can handle the indeces
+* Then we can handle the case of numbers divisible by 3 (ie x % 3 = 0). These will return "ping."
+* Following this, we can handle the case of numbers divisible by 5 (x % 5 = 0). These will return "pong."
+* All other numbers will return the number itself.
+* In hindsight, I realize that I should probably have safeguards for users putting in non-numeric characters into the input, but I was honestly so happy that the javascript logic ran, that I didn't really care to put this in. It should probably be a simply prompt asking user to put in numbers only, but I'm lazy.
 
 
 
