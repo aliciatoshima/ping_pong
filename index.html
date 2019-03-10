@@ -9,24 +9,51 @@
     <script src="js/scripts.js"></script>
     <title>Ping Pong</title>
   </head>
+
   <body>
+
+
     <div class="container">
-      <h1>Ping Pong Game Logic Thing</h1>
+      <div class="jumbotron">
+        <h1>Ping Pong</h1>
+      </div>
 
-      <form id="leap-year">
-        <div class="form-group">
-          <label for="number">Enter a number and I'll count up to it using my Ping Pong function:</label>
-          <input id="number" type="text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 sidebar">
+            <h3>About Ping Pong</h3>
+            <h4>Created By</h4>
+            <h6>Alicia Toshima</h6>
+
+            <h4>GitHub Username:</h4>
+            <h6>aliciatoshima</h6>
+
+            <h4>Github Repo URL</h4>
+            <h6> <a href="https://aliciatoshima.github.io/ping_pong/" target="_blank">https://aliciatoshima.github.io/ping_pong/</a></h6>
+
+            <h4>Github Pages URL</h4>
+            <h6> <a href="https://github.com/aliciatoshima/ping_pong" target="_blank">https://github.com/aliciatoshima/ping_pong</a></h6>
+          </div>
+
+          <div class="col-md-7">
+            <form id="leap-year">
+              <div class="form-group">
+                <label for="number">Enter a number and I'll count up to it using my Ping Pong function:</label>
+                <input id="number" type="text">
+              </div>
+
+              <button type="submit" class="btn btn-outline-dark">Ping Pong!</button>
+            </form>
+            <br>
+
+            <div id="result">
+                <ul class="output">
+
+                </ul>
+            </div>
+
+          </div>
         </div>
-
-        <button type="submit" class="btn btn-outline-dark">Ping Pong!</button>
-      </form>
-      <br>
-
-      <div id="result">
-         <ul class="output">
-
-         </ul>
       </div>
     </div>
   </body>

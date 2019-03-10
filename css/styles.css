@@ -1,0 +1,20 @@
+body {
+  background-color: #CDCDC1;
+}
+
+.jumbotron {
+  background-color: #FFEC8B;
+}
+
+.btn {
+  background-color: #9ACD32;
+}
+
+.sidebar {
+  background-color: #A2C93A;
+  margin: 4 px;
+}
+
+.sidebar h4 {
+  color: #FFEC8B;
+}
