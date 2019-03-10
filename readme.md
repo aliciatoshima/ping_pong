@@ -9,8 +9,8 @@
 This project uses an HTML form and asks users to input a number; the output will count up to the inputed number. However, numbers divisble by 3 will output "ping", numbers divisible by 5 will output "pong", numbers divisible by 15 will output "pingpong", and all other numbers will return that number. Link to GitHub pages can be found here: https://aliciatoshima.github.io/ping_pong/. Link to the GitHub repository can be found here: https://github.com/aliciatoshima/ping_pong. This project is an exercise in using HTML (and showcasing all of the elements learned), CSS, Bootstrap, JavaScript and jquery, branching, for and forEach loops, and demonstration of logic via the specifications.
 
 ## Specifications
-* The program should count up to the number inputted. Numbers that are divisible by 3 should return "ping", numbers divisible by 5 should return "pong", numbers divisible by 15 (both 3 and 5) should return "pingpong", and all other numbers should return the number itself. Ideally, these would be put into an array once the number has been entered by the user so that it can be easily looped through.
-**Input:** 15
+* The program should count up to the number inputted. Numbers that are divisible by 3 should return "ping", numbers divisible by 5 should return "pong", numbers divisible by 15 (both 3 and 5) should return "pingpong", and all other numbers should return the number itself. Ideally, these would be put into an array once the number has been entered by the user so that it can be easily looped through.\
+**Input:** 15\
 **Output:** [1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, pingpong]
 
 ##### Logic:
